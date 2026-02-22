@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CAD AI Viewer</title>
+  <style>
+    body { margin: 0; overflow: hidden; background: black; }
+  </style>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+<script>
+
+const scene = new THREE.Scene();
+
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 0.1, 5000);
+camera.position.set(200,200,200);
+
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
+
+const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+scene.add(new THREE.DirectionalLight(0xffffff,1));
+scene.add(new THREE.AmbientLight(0xffffff,0.4));
+
+const loader = new THREE.STLLoader();
+
+loader.load('part.stl', function(geometry){
+
+    geometry.computeVertexNormals();
+
+    const mesh = new THREE.Mesh(
+        geometry,
+        new THREE.MeshStandardMaterial({
+            color: 0x0077ff,
+            metalness: 0.3,
+            roughness: 0.6
+        })
+    );
+
+    scene.add(mesh);
+    loadAnalysis();
+});
+
+function alignToAxis(mesh, axis){
+    if(Math.abs(axis[0]) > 0.9){
+        mesh.rotation.z = Math.PI/2;
+    }
+    else if(Math.abs(axis[1]) > 0.9){
+        mesh.rotation.x = Math.PI/2;
+    }
+}
+
+function loadAnalysis(){
+
+    fetch('analysis.json')
+        .then(res => res.json())
+        .then(data => {
+
+            // 🔴 Bolt Patterns
+            data.bolt_patterns.forEach(pattern => {
+
+                pattern.centers.forEach(center => {
+
+                    const cyl = new THREE.Mesh(
+                        new THREE.CylinderGeometry(pattern.radius, pattern.radius, 10, 32),
+                        new THREE.MeshBasicMaterial({
+                            color: 0xff0000,
+                            transparent: true,
+                            opacity: 0.4
+                        })
+                    );
+
+                    cyl.position.set(center[0], center[1], center[2]);
+                    alignToAxis(cyl, pattern.axis);
+                    scene.add(cyl);
+                });
+            });
+
+            // 🟢 Slots
+            data.slots.forEach(slot => {
+
+                slot.centers.forEach(center => {
+
+                    const cyl = new THREE.Mesh(
+                        new THREE.CylinderGeometry(slot.radius, slot.radius, 8, 32),
+                        new THREE.MeshBasicMaterial({
+                            color: 0x00ff00,
+                            transparent: true,
+                            opacity: 0.4
+                        })
+                    );
+
+                    cyl.position.set(center[0], center[1], center[2]);
+                    alignToAxis(cyl, slot.axis);
+                    scene.add(cyl);
+                });
+            });
+        });
+}
+
+function animate(){
+    requestAnimationFrame(animate);
+    renderer.render(scene,camera);
+}
+
+animate();
+
+</script>
+
+</body>
+</html>

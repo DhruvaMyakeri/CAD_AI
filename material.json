@@ -1,0 +1,632 @@
+[
+{
+"material_id": "AL-6061-T6",
+"name": "Aluminum 6061-T6",
+"category": "metal",
+"sub_category": "Aluminum alloys",
+"mechanical": {
+"density_kg_m3": 2700,
+"youngs_modulus_GPa": 68.9,
+"yield_strength_MPa": 276,
+"ultimate_tensile_strength_MPa": 310,
+"poissons_ratio": 0.33,
+"elongation_percent": 12,
+"fatigue_strength_MPa": 96.5
+},
+"thermal": {
+"thermal_conductivity_W_mK": 167,
+"melting_point_C": 582,
+"max_service_temp_C": 150,
+"thermal_expansion_um_mK": 23.6
+},
+"manufacturing": {
+"machinability_rating_percent": 50,
+"weldability_rating_0_1": 0.85,
+"formability_rating_0_1": 0.7,
+"castability_rating_0_1": 0.2,
+"printability_rating_0_1": 0.4
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.8,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.5,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.15,
+"availability_rating_0_1": 0.95
+},
+"applications": [
+"Bicycle frames",
+"Structural components"
+]
+},
+{
+"material_id": "ST-AISI-1018",
+"name": "Carbon Steel AISI 1018 (Cold Drawn)",
+"category": "metal",
+"sub_category": "Carbon steels",
+"mechanical": {
+"density_kg_m3": 7870,
+"youngs_modulus_GPa": 200,
+"yield_strength_MPa": 370,
+"ultimate_tensile_strength_MPa": 440,
+"poissons_ratio": 0.29,
+"elongation_percent": 15,
+"fatigue_strength_MPa": 210
+},
+"thermal": {
+"thermal_conductivity_W_mK": 51.9,
+"melting_point_C": 1450,
+"max_service_temp_C": 400,
+"thermal_expansion_um_mK": 11.5
+},
+"manufacturing": {
+"machinability_rating_percent": 78,
+"weldability_rating_0_1": 1.0,
+"formability_rating_0_1": 0.8,
+"castability_rating_0_1": 0.3,
+"printability_rating_0_1": 0.2
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.1,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.2,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.05,
+"availability_rating_0_1": 1.0
+},
+"applications": [
+"Shafts",
+"Machined parts"
+]
+},
+{
+"material_id": "SS-AISI-316L",
+"name": "Stainless Steel AISI 316L",
+"category": "metal",
+"sub_category": "Stainless steels",
+"mechanical": {
+"density_kg_m3": 8000,
+"youngs_modulus_GPa": 193,
+"yield_strength_MPa": 290,
+"ultimate_tensile_strength_MPa": 560,
+"poissons_ratio": 0.28,
+"elongation_percent": 50,
+"fatigue_strength_MPa": 240
+},
+"thermal": {
+"thermal_conductivity_W_mK": 16.3,
+"melting_point_C": 1390,
+"max_service_temp_C": 800,
+"thermal_expansion_um_mK": 16.0
+},
+"manufacturing": {
+"machinability_rating_percent": 35,
+"weldability_rating_0_1": 0.95,
+"formability_rating_0_1": 0.85,
+"castability_rating_0_1": 0.4,
+"printability_rating_0_1": 0.9
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.95,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.9,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.3,
+"availability_rating_0_1": 0.9
+},
+"applications": [
+"Medical implants",
+"Marine hardware"
+]
+},
+{
+"material_id": "TI-6AL-4V-GR5",
+"name": "Titanium Ti-6Al-4V Grade 5",
+"category": "metal",
+"sub_category": "Titanium alloys",
+"mechanical": {
+"density_kg_m3": 4430,
+"youngs_modulus_GPa": 114,
+"yield_strength_MPa": 880,
+"ultimate_tensile_strength_MPa": 950,
+"poissons_ratio": 0.34,
+"elongation_percent": 14,
+"fatigue_strength_MPa": 510
+},
+"thermal": {
+"thermal_conductivity_W_mK": 6.7,
+"melting_point_C": 1650,
+"max_service_temp_C": 400,
+"thermal_expansion_um_mK": 8.6
+},
+"manufacturing": {
+"machinability_rating_percent": 22,
+"weldability_rating_0_1": 0.6,
+"formability_rating_0_1": 0.3,
+"castability_rating_0_1": 0.2,
+"printability_rating_0_1": 0.95
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.98,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.95,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.85,
+"availability_rating_0_1": 0.7
+},
+"applications": [
+"Aerospace turbine blades",
+"High-performance fasteners"
+]
+},
+{
+"material_id": "PO-PEEK",
+"name": "Polyetheretherketone (PEEK)",
+"category": "polymer",
+"sub_category": "High-performance polymers",
+"mechanical": {
+"density_kg_m3": 1320,
+"youngs_modulus_GPa": 3.6,
+"yield_strength_MPa": 100,
+"ultimate_tensile_strength_MPa": 110,
+"poissons_ratio": 0.37,
+"elongation_percent": 40,
+"fatigue_strength_MPa": 60
+},
+"thermal": {
+"thermal_conductivity_W_mK": 0.25,
+"melting_point_C": 343,
+"max_service_temp_C": 250,
+"thermal_expansion_um_mK": 47.0
+},
+"manufacturing": {
+"machinability_rating_percent": 80,
+"weldability_rating_0_1": 0.3,
+"formability_rating_0_1": 0.9,
+"castability_rating_0_1": 0.0,
+"printability_rating_0_1": 0.8
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.95,
+"uv_resistance_rating_0_1": 0.9,
+"chemical_resistance_rating_0_1": 0.98,
+"water_absorption_percent": 0.1
+},
+"economic": {
+"relative_cost_index_0_1": 0.95,
+"availability_rating_0_1": 0.6
+},
+"applications": [
+"Aerospace electrical connectors",
+"Steam cleaning tools"
+]
+},
+{
+"material_id": "CE-AL2O3-99",
+"name": "Alumina Ceramic (99.5%)",
+"category": "ceramic",
+"sub_category": "Ceramics (engineering grade)",
+"mechanical": {
+"density_kg_m3": 3900,
+"youngs_modulus_GPa": 370,
+"yield_strength_MPa": 300,
+"ultimate_tensile_strength_MPa": 300,
+"poissons_ratio": 0.22,
+"elongation_percent": 0.01,
+"fatigue_strength_MPa": 180
+},
+"thermal": {
+"thermal_conductivity_W_mK": 30.0,
+"melting_point_C": 2050,
+"max_service_temp_C": 1700,
+"thermal_expansion_um_mK": 8.0
+},
+"manufacturing": {
+"machinability_rating_percent": 5,
+"weldability_rating_0_1": 0.0,
+"formability_rating_0_1": 0.0,
+"castability_rating_0_1": 0.1,
+"printability_rating_0_1": 0.3
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 1.0,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 1.0,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.6,
+"availability_rating_0_1": 0.8
+},
+"applications": [
+"Spark plug insulators",
+"Ballistic armor plates"
+]
+},
+{
+"material_id": "EL-NITRILE-70",
+"name": "Nitrile Rubber (Buna-N) 70 Duro",
+"category": "elastomer",
+"sub_category": "Elastomers",
+"mechanical": {
+"density_kg_m3": 1200,
+"youngs_modulus_GPa": 0.01,
+"yield_strength_MPa": 15,
+"ultimate_tensile_strength_MPa": 15,
+"poissons_ratio": 0.49,
+"elongation_percent": 400,
+"fatigue_strength_MPa": 2
+},
+"thermal": {
+"thermal_conductivity_W_mK": 0.25,
+"melting_point_C": 120,
+"max_service_temp_C": 100,
+"thermal_expansion_um_mK": 150.0
+},
+"manufacturing": {
+"machinability_rating_percent": 10,
+"weldability_rating_0_1": 0.0,
+"formability_rating_0_1": 0.95,
+"castability_rating_0_1": 0.8,
+"printability_rating_0_1": 0.1
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.8,
+"uv_resistance_rating_0_1": 0.4,
+"chemical_resistance_rating_0_1": 0.85,
+"water_absorption_percent": 0.5
+},
+"economic": {
+"relative_cost_index_0_1": 0.05,
+"availability_rating_0_1": 1.0
+},
+"applications": [
+"O-rings",
+"Fuel hoses"
+]
+},
+{
+"material_id": "CO-CFRP-EPOXY-UNI",
+"name": "Carbon Fiber Epoxy Composite (UD)",
+"category": "composite",
+"sub_category": "Fiber-reinforced composites",
+"mechanical": {
+"density_kg_m3": 1600,
+"youngs_modulus_GPa": 135,
+"yield_strength_MPa": 1200,
+"ultimate_tensile_strength_MPa": 1500,
+"poissons_ratio": 0.28,
+"elongation_percent": 1.5,
+"fatigue_strength_MPa": 800
+},
+"thermal": {
+"thermal_conductivity_W_mK": 5.0,
+"melting_point_C": 280,
+"max_service_temp_C": 180,
+"thermal_expansion_um_mK": 0.5
+},
+"manufacturing": {
+"machinability_rating_percent": 15,
+"weldability_rating_0_1": 0.0,
+"formability_rating_0_1": 0.5,
+"castability_rating_0_1": 0.0,
+"printability_rating_0_1": 0.6
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.9,
+"uv_resistance_rating_0_1": 0.7,
+"chemical_resistance_rating_0_1": 0.75,
+"water_absorption_percent": 0.1
+},
+"economic": {
+"relative_cost_index_0_1": 1.0,
+"availability_rating_0_1": 0.6
+},
+"applications": [
+"F1 Chassis",
+"Aerospace wing skins"
+]
+},
+{
+"material_id": "CU-C11000",
+"name": "Copper ETP C11000",
+"category": "metal",
+"sub_category": "Copper alloys",
+"mechanical": {
+"density_kg_m3": 8940,
+"youngs_modulus_GPa": 117,
+"yield_strength_MPa": 250,
+"ultimate_tensile_strength_MPa": 300,
+"poissons_ratio": 0.33,
+"elongation_percent": 25,
+"fatigue_strength_MPa": 90
+},
+"thermal": {
+"thermal_conductivity_W_mK": 391,
+"melting_point_C": 1083,
+"max_service_temp_C": 200,
+"thermal_expansion_um_mK": 17.0
+},
+"manufacturing": {
+"machinability_rating_percent": 20,
+"weldability_rating_0_1": 0.5,
+"formability_rating_0_1": 0.9,
+"castability_rating_0_1": 0.2,
+"printability_rating_0_1": 0.4
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.7,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.4,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.45,
+"availability_rating_0_1": 0.9
+},
+"applications": [
+"Electrical wiring",
+"Heat exchangers"
+]
+},
+{
+"material_id": "MG-AZ31B",
+"name": "Magnesium AZ31B",
+"category": "metal",
+"sub_category": "Magnesium alloys",
+"mechanical": {
+"density_kg_m3": 1770,
+"youngs_modulus_GPa": 45,
+"yield_strength_MPa": 200,
+"ultimate_tensile_strength_MPa": 260,
+"poissons_ratio": 0.35,
+"elongation_percent": 15,
+"fatigue_strength_MPa": 97
+},
+"thermal": {
+"thermal_conductivity_W_mK": 96,
+"melting_point_C": 630,
+"max_service_temp_C": 120,
+"thermal_expansion_um_mK": 26.0
+},
+"manufacturing": {
+"machinability_rating_percent": 100,
+"weldability_rating_0_1": 0.7,
+"formability_rating_0_1": 0.6,
+"castability_rating_0_1": 0.9,
+"printability_rating_0_1": 0.3
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.2,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.2,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.5,
+"availability_rating_0_1": 0.7
+},
+"applications": [
+"Laptop cases",
+"Camera bodies"
+]
+},
+{
+"material_id": "TS-AISI-D2",
+"name": "Tool Steel AISI D2",
+"category": "metal",
+"sub_category": "Tool steels",
+"mechanical": {
+"density_kg_m3": 7700,
+"youngs_modulus_GPa": 210,
+"yield_strength_MPa": 1500,
+"ultimate_tensile_strength_MPa": 1730,
+"poissons_ratio": 0.3,
+"elongation_percent": 5,
+"fatigue_strength_MPa": 750
+},
+"thermal": {
+"thermal_conductivity_W_mK": 20,
+"melting_point_C": 1420,
+"max_service_temp_C": 500,
+"thermal_expansion_um_mK": 10.4
+},
+"manufacturing": {
+"machinability_rating_percent": 35,
+"weldability_rating_0_1": 0.2,
+"formability_rating_0_1": 0.1,
+"castability_rating_0_1": 0.1,
+"printability_rating_0_1": 0.5
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.3,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.3,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.65,
+"availability_rating_0_1": 0.8
+},
+"applications": [
+"Stamping dies",
+"Industrial shears"
+]
+},
+{
+"material_id": "CI-GRAY-G2500",
+"name": "Gray Cast Iron Class 40",
+"category": "metal",
+"sub_category": "Cast irons",
+"mechanical": {
+"density_kg_m3": 7150,
+"youngs_modulus_GPa": 124,
+"yield_strength_MPa": 276,
+"ultimate_tensile_strength_MPa": 276,
+"poissons_ratio": 0.26,
+"elongation_percent": 0.8,
+"fatigue_strength_MPa": 110
+},
+"thermal": {
+"thermal_conductivity_W_mK": 50,
+"melting_point_C": 1150,
+"max_service_temp_C": 450,
+"thermal_expansion_um_mK": 10.5
+},
+"manufacturing": {
+"machinability_rating_percent": 90,
+"weldability_rating_0_1": 0.1,
+"formability_rating_0_1": 0.0,
+"castability_rating_0_1": 1.0,
+"printability_rating_0_1": 0.1
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.2,
+"uv_resistance_rating_0_1": 1.0,
+"chemical_resistance_rating_0_1": 0.4,
+"water_absorption_percent": 0.0
+},
+"economic": {
+"relative_cost_index_0_1": 0.04,
+"availability_rating_0_1": 1.0
+},
+"applications": [
+"Engine blocks",
+"Brake rotors"
+]
+},
+{
+"material_id": "PL-LDPE",
+"name": "Low-Density Polyethylene (LDPE)",
+"category": "polymer",
+"sub_category": "Commodity plastics",
+"mechanical": {
+"density_kg_m3": 920,
+"youngs_modulus_GPa": 0.3,
+"yield_strength_MPa": 10,
+"ultimate_tensile_strength_MPa": 15,
+"poissons_ratio": 0.4,
+"elongation_percent": 500,
+"fatigue_strength_MPa": 5
+},
+"thermal": {
+"thermal_conductivity_W_mK": 0.33,
+"melting_point_C": 110,
+"max_service_temp_C": 80,
+"thermal_expansion_um_mK": 200.0
+},
+"manufacturing": {
+"machinability_rating_percent": 30,
+"weldability_rating_0_1": 0.9,
+"formability_rating_0_1": 1.0,
+"castability_rating_0_1": 0.0,
+"printability_rating_0_1": 0.5
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.9,
+"uv_resistance_rating_0_1": 0.3,
+"chemical_resistance_rating_0_1": 0.8,
+"water_absorption_percent": 0.01
+},
+"economic": {
+"relative_cost_index_0_1": 0.02,
+"availability_rating_0_1": 1.0
+},
+"applications": [
+"Plastic bags",
+"Squeeze bottles"
+]
+},
+{
+"material_id": "PL-ABS-EP",
+"name": "ABS (Acrylonitrile Butadiene Styrene)",
+"category": "polymer",
+"sub_category": "Engineering plastics",
+"mechanical": {
+"density_kg_m3": 1050,
+"youngs_modulus_GPa": 2.3,
+"yield_strength_MPa": 40,
+"ultimate_tensile_strength_MPa": 45,
+"poissons_ratio": 0.35,
+"elongation_percent": 30,
+"fatigue_strength_MPa": 20
+},
+"thermal": {
+"thermal_conductivity_W_mK": 0.17,
+"melting_point_C": 105,
+"max_service_temp_C": 80,
+"thermal_expansion_um_mK": 95.0
+},
+"manufacturing": {
+"machinability_rating_percent": 100,
+"weldability_rating_0_1": 0.2,
+"formability_rating_0_1": 0.9,
+"castability_rating_0_1": 0.0,
+"printability_rating_0_1": 1.0
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.7,
+"uv_resistance_rating_0_1": 0.2,
+"chemical_resistance_rating_0_1": 0.5,
+"water_absorption_percent": 0.3
+},
+"economic": {
+"relative_cost_index_0_1": 0.08,
+"availability_rating_0_1": 1.0
+},
+"applications": [
+"LEGO bricks",
+"Dashboard components"
+]
+},
+{
+"material_id": "AM-PLA-3D",
+"name": "Polylactic Acid (PLA)",
+"category": "polymer",
+"sub_category": "3D printing materials",
+"mechanical": {
+"density_kg_m3": 1240,
+"youngs_modulus_GPa": 3.5,
+"yield_strength_MPa": 50,
+"ultimate_tensile_strength_MPa": 60,
+"poissons_ratio": 0.36,
+"elongation_percent": 6,
+"fatigue_strength_MPa": 25
+},
+"thermal": {
+"thermal_conductivity_W_mK": 0.13,
+"melting_point_C": 160,
+"max_service_temp_C": 50,
+"thermal_expansion_um_mK": 68.0
+},
+"manufacturing": {
+"machinability_rating_percent": 60,
+"weldability_rating_0_1": 0.1,
+"formability_rating_0_1": 0.4,
+"castability_rating_0_1": 0.0,
+"printability_rating_0_1": 1.0
+},
+"environmental": {
+"corrosion_resistance_rating_0_1": 0.5,
+"uv_resistance_rating_0_1": 0.4,
+"chemical_resistance_rating_0_1": 0.4,
+"water_absorption_percent": 0.8
+},
+"economic": {
+"relative_cost_index_0_1": 0.03,
+"availability_rating_0_1": 1.0
+},
+"applications": [
+"Rapid prototyping",
+"Biodegradable containers"
+]
+}
+]

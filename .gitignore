@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.json
+!material.json
+part.STEP
+executive_engineering_report.txt
+.env
+venv/
