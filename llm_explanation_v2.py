@@ -5,7 +5,7 @@ from google import genai
 # CONFIG
 # ==============================
 
-API_KEY = "AIzaSyC9QoYy8lYmEYtl2NHBt-RRjWism-ADalg"
+API_KEY = "apikey"
 MODEL_NAME = "gemini-2.5-flash"
 
 INPUT_PATH = "final_design_report_v5.json"
